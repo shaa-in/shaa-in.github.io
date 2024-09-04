@@ -34,6 +34,8 @@ theme: null
 plugins:
   - jekyll-feed
 
+s3bucket: https://bayan-ksa.s3.me-central-1.amazonaws.com/
+
 include:
   - css/
   - js/
