@@ -1,0 +1,17 @@
+{% include bayan_head.html %}
+{% include bayan_header.html %}
+
+<h1>{{ page.number }}</h1>
+
+{% assign plot = site.data.plots | find:"slug",'plot001' %}
+
+<br/>
+{{ plot.sizes }}
+<br/>
+{{ plot.description }}
+
+
+{{ content }}
+
+{% include bayan_footer.html %}
+{% include bayan_foot.html %}

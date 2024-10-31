@@ -1,74 +1,8 @@
-<!DOCTYPE html>
-<html class="no-js" lang="zxx">
+{% include bayan_head.html %}
+{% include bayan_header.html %}
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>بيان العقارية</title>
-    <meta name="robots" content="noindex, follow">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="{{ site.s3bucket }}x-icon" href="{{ site.s3bucket }}bayan-logo-only.png">
+{{ content }}
 
+{% include bayan_footer.html %}
+{% include bayan_foot.html %}
 
-    <!-- CSS (Font, Plugins & Style CSS files) -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-
-    <!-- Vendor CSS (Bootstrap & Icon Font) -->
-    <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
-
-    <!-- Plugins CSS (All Plugins Files) -->
-    <link rel="stylesheet" href="css/plugins/font-awesome.min.css">
-    <link rel="stylesheet" href="css/plugins/swiper-bundle.min.css">
-    <link rel="stylesheet" href="css/plugins/animate.min.css">
-    <link rel="stylesheet" href="css/plugins/odometer-theme-default.min.css">
-    <link rel="stylesheet" href="css/plugins/fancybox.min.css">
-    <link rel="stylesheet" href="css/plugins/magnific-pupup.css">
-
-    <!-- Style CSS -->
-    <link rel="stylesheet" href="css/style-bayan.css">
-    <link rel="stylesheet" href="css/custom-bayan.css">
-</head>
-
-<body >
-
-
-    {% include bayan_header.html %}
-    {{ content }}
-    {% include bayan_footer.html %}
-    
-
-
-    <!-- JS Vendor, Plugins & Activation Script Files -->
-
-    <!-- Vendors JS -->
-    <script src="js/vendor/modernizr-3.11.7.min.js"></script>
-    <script src="js/vendor/jquery-3.6.0.min.js"></script>
-    <script src="js/vendor/jquery-migrate-3.3.2.min.js"></script>
-    <script src="js/vendor/bootstrap.min.js"></script>
-
-    <!-- Plugins JS -->
-    <script src="js/plugins/magnificpopup.min.js"></script>
-    <script src="js/plugins/swiper-bundle.min.js"></script>
-    <script src="js/plugins/easypiechart.min.js"></script>
-    <script src="js/plugins/tilt.jquery.min.js"></script>
-    <script src="js/plugins/odometer.min.js"></script>
-    <script src="js/plugins/isotope.min.js"></script>
-    <script src="js/plugins/imagesloaded.min.js"></script>
-    <script src="js/plugins/waypoint.min.js"></script>
-    <script src="js/plugins/wow.min.js"></script>
-    <script src="js/plugins/fancybox.min.js"></script>
-    <script src="js/plugins/jquery.ajaxchimp.min.js"></script>
-    <script src="js/plugins/parallax.js"></script>
-
-    <!-- Activation JS -->
-    <script src="js/main.js"></script>
-    <script src="js/pages/home.js"></script>
-
-</body>
-
-</html>
