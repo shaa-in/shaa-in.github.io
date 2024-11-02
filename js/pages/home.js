@@ -219,7 +219,7 @@ var swiper = new Swiper(".work-carousel",{
   loop:true,
   speed:800,
   autoplay:false,
-  slidesPerView:4,
+  slidesPerView:10,
   spaceBetween:20,
   pagination:false,  
   navigation: {
@@ -228,19 +228,19 @@ var swiper = new Swiper(".work-carousel",{
   },
   breakpoints:{
     0: {
-      slidesPerView: 1
+      slidesPerView: 5
     },
     480: {
-      slidesPerView: 2
+      slidesPerView: 6
     },
     768: {
-      slidesPerView: 3
+      slidesPerView: 8
     },
     992: {
-      slidesPerView: 3
+      slidesPerView: 8
     },
     1200: {
-      slidesPerView: 4
+      slidesPerView: 10
     }
   }
 })
