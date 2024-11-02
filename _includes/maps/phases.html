@@ -1,0 +1,39 @@
+<object id="my-svg" type="image/svg+xml" data="us.svg" style="width: 500px; height: 500px; border:1px solid black;">
+  Your browser does not support SVG
+</object>
+
+
+<script>
+  window.onload = function() {
+    var panZoom = svgPanZoom('#my-svg', {
+      zoomEnabled: true,
+      controlIconsEnabled: true, // This adds the default zoom in, zoom out, and reset controls
+      minZoom: 0.5,
+      maxZoom: 10,
+      fit: true,
+      center: true
+    });
+
+    // Optionally add custom controls if desired
+    document.getElementById('zoom-in').addEventListener('click', function(ev){
+      ev.preventDefault();
+      panZoom.zoomIn();
+    });
+
+    document.getElementById('zoom-out').addEventListener('click', function(ev){
+      ev.preventDefault();
+      panZoom.zoomOut();
+    });
+
+    document.getElementById('reset').addEventListener('click', function(ev){
+      ev.preventDefault();
+      panZoom.resetZoom();
+    });
+  };
+</script>
+
+<div class="controls">
+  <button id="zoom-in">Zoom in</button>
+  <button id="zoom-out">Zoom out</button>
+  <button id="reset">Reset</button>
+</div>
