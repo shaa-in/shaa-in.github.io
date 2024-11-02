@@ -234,14 +234,20 @@ var swiper = new Swiper(".work-carousel",{
       slidesPerView: 3
     },
     768: {
-      slidesPerView: 5
+      slidesPerView: 4
     },
     992: {
       slidesPerView: 6
     },
     1200: {
-      slidesPerView: 7
-    }
+      slidesPerView: 8
+    },
+    1400: {
+      slidesPerView: 10
+    },
+    1600: {
+      slidesPerView: 12
+    },
   }
 })
 
