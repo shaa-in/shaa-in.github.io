@@ -10,12 +10,14 @@
 .slider-2-4 { width: 172px; }
 .slider-2-5 { width: 124px; }
 
-    .video-responsive {
-        overflow: hidden;
-        padding-top: 56.25%;
-        position: relative;
-        height: 0;
-    }
+.video-responsive {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  background-color: white; /* White background */
+  overflow: hidden;
+}
     .video-responsive iframe {
         position: absolute;
         top: 0;
@@ -27,38 +29,28 @@
   .vjs-tech {
     background-color: white !important;
   }
+/* Making sure the video fills the parent container */
 .video-responsive-video {
-  display: block;
-  margin: 0 auto; /* Center the video horizontally */
-  position: relative;
-    height: 715px;
-    width: 1271px;
-  max-width: 100%; /* Prevent the video from exceeding the container width */
+  width: 100%;
+  height: auto; /* Maintains aspect ratio */
+  max-width: 100%; /* Prevents the video from exceeding the container */
+  background-color: white; /* White background for visibility */
+  aspect-ratio: 16 / 9; /* Ensures the aspect ratio of 16:9 */
+}
+/* Media queries for additional adjustments, if necessary */
+@media (max-width: 767px) {
+  .video-responsive {
+    padding-top: 75%; /* Aspect ratio: 4:3 for smaller screens */
+  }
 }
 
-@media only (min-width: 992px) and (max-width: 1199px) {
-  .video-responsive-video {
-    height: 715px;
-    width: 1271px;
+@media (max-width: 575px) {
+  .video-responsive {
+    padding-top: 100%; /* Aspect ratio: 1:1 for very small screens */
   }
 }
-@media only (max-width: 767px) {
-  .video-responsive-video {
-    height: 620px;
-    width: 1102px;
-  }
-}
-@media only (max-width: 575px) {
-  .video-responsive-video {
-    height: 520px;
-    width: 924px;
-  }
-}
-@media only (max-width: 479px) {
-  .video-responsive-video {
-    height: 340px;
-  }
-}
+
+
 .noto-kufi-arabic-one {
   font-family: "Noto Kufi Arabic", sans-serif;
   color: green;
