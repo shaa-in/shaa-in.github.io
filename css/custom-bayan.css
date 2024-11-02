@@ -24,7 +24,42 @@
         right: 0;
     }
 
+  /* Set the video background to white */
+  .vjs-tech {
+    background-color: white !important;
+  }
+  
+.video-responsive-video {
+  display: block;
+  margin: 0 auto; /* Center the video horizontally */
+  position: relative;
+  width: 100%; /* Adjust width as needed */
+  max-width: 100%; /* Prevent the video from exceeding the container width */
+}
 
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .video-responsive-video {
+    height: 715px;
+    width: 1271px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .video-responsive-video {
+    height: 620px;
+    width: 1102px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .video-responsive-video {
+    height: 520px;
+    width: 924px;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .video-responsive-video {
+    height: 340px;
+  }
+}
 .noto-kufi-arabic-one {
   font-family: "Noto Kufi Arabic", sans-serif;
   color: green;

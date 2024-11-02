@@ -228,19 +228,19 @@ var swiper = new Swiper(".work-carousel",{
   },
   breakpoints:{
     0: {
-      slidesPerView: 5
+      slidesPerView: 3
     },
     480: {
-      slidesPerView: 6
+      slidesPerView: 3
     },
     768: {
-      slidesPerView: 8
+      slidesPerView: 5
     },
     992: {
-      slidesPerView: 8
+      slidesPerView: 6
     },
     1200: {
-      slidesPerView: 10
+      slidesPerView: 7
     }
   }
 })
