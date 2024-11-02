@@ -193,6 +193,9 @@ layout: bayan
 </div>
 <!-- Slider Section End -->
 
+
+
+
 <!-- Strategy and YouTube Video Section start -->
 <div class="section-padding-top strategy overflow-hidden">
     <div class="container">
@@ -209,13 +212,42 @@ layout: bayan
 
         <div class="row justify-content-center">
             <div class="col-12 col-md-12 col-lg-12">
+
+  <!-- Responsive Video Wrapper -->
+
+
+
                 <!-- Responsive Video Wrapper -->
-                <div class="video-responsive">
+<!--                 <div class="video-responsive">
                     <iframe id="ytplayer" type="text/html"
                         src="https://www.youtube.com/embed/loh2W7uh6Lw?enablejsapi=1&modestbranding=1&color=white&iv_load_policy=3&showinfo=0&nologo=1"
                         frameborder="0" allowfullscreen style="width: 100%; height: 100%; border: none;">
                     </iframe>
-                </div>
+                </div> -->
+              <video
+                id="my-video"
+                class=" video-js video-responsive-video"
+                controls
+                preload="auto"
+                width="640"
+                height="264"
+                poster="{{ site.s3bucket }}video.jpg"
+                data-setup="{}"
+
+              >
+                <source src="{{ site.s3bucket }}bayan.mp4" type="video/mp4" />
+                <!-- <source src="MY_VIDEO.webm" type="video/webm" /> -->
+                <p class="vjs-no-js">
+                  To view this video please enable JavaScript, and consider upgrading to a
+                  web browser that
+                  <a href="https://videojs.com/html5-video-support/" target="_blank"
+                    >supports HTML5 video</a
+                  >
+                </p>
+
+                </video>
+
+              <script src="https://vjs.zencdn.net/8.16.1/video.min.js"></script>
             </div>
         </div>
 
@@ -229,173 +261,93 @@ layout: bayan
 
 
 
-<!-- Investors Section Start -->
-<div class="section-padding blog-grid" id="investors">
+<div id="villas"></div>
+
+
+<!-- More Project Section Start -->
+<div class="more-project" style="z-index: 12; position: relative;">
+
     <div class="container" style="margin-bottom: 40px; direction: rtl;" >
         <div class="row">
             <div class="col-12 wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".1s">
                 <!-- Heading Start -->
                 <div class="heading-one">
-                    <span class="heading-one-subtitle gradient-text-1-ghamejed">المستثمرون</span>
+                    <span class="heading-one-subtitle gradient-text-1-ghamejed">سكن نموزجي بمنطقة ١ من مشروع بيان العزيزية</span>
                 </div>
                 <!-- Heading End -->
             </div>
         </div>
     </div>
+
     <div class="container">
-        <div class="row row-cols-lg-6 row-cols-md-3 row-cols-sm-2 row-cols-2 grid parent-gallery">
-            <div class="col mb-30 grid-item design wow fadeIn" data-wow-duration="1.2s" data-wow-delay=".1s">
+        <div class="row row-cols-lg-3 row-cols-sm-1 row-cols-1 mb-n20 parent-gallery">
+            <div class="col mb-20 wow fadeIn" data-wow-duration="1.2s" data-wow-delay=".1s">
                 <!-- Single Project Start -->
-                <div class="single-project" style="direction: rtl;">
+                <div class="single-project">
                     <a class="thumbnail" href="project-details.html">
-                        <img src="{{ site.s3bucket }}partners/altijaria.jpg" alt="ProjectImage">
+                        <img src="{{ site.s3bucket }}exterior/duplex-d.jpg" alt="ProjectImage">
                     </a>
-                    <div class="content" style="right: 0;">
-                        <span class="subtitle">المستثمرون</span>
+                    <div class="content">
+                        <span class="subtitle">المساحة 252 متر</span>
                         <h3 class="title">
-                            <a href="https://www.altijaria.com/our-investment/1" target="_blank">الشركة التجارية العقارية، ش.م.ك.ع</a> 
+                            <a href="project-details.html">DUBLEX D نموزج دبلكس</a>
                         </h3>
                     </div>
-                </div>
-                <!-- Single Project End -->
-            </div>
-            <div class="col mb-30 grid-item development wow fadeIn" data-wow-duration="1.2s" data-wow-delay=".2s">
-                <!-- Single Project Start -->
-                <div class="single-project" style="direction: rtl;">
-                    <a class="thumbnail" href="project-details.html">
-                        <img src="{{ site.s3bucket }}partners/vcb.jpg" alt="ProjectImage">
-                    </a>
-                    <div class="content" style="right: 0;">
-                        <span class="subtitle">المستثمرون</span>
-                        <h3 class="title">
-                            <a href="https://www.vc-bank.com/ar/investment-portfolio/bayan-real-estate-development-company"  target="_blank">VENTURE ESTATES HOLDING</a>
-                        </h3>
+                    <div class="lightbox">
+                        <a class="item" href="{{ site.s3bucket }}exterior/duplex-d.jpg"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
-                <!-- Single Project End -->
-            </div>
-            <div class="col mb-30 grid-item news wow fadeIn" data-wow-duration="1.2s" data-wow-delay=".3s">
-                <!-- Single Project Start -->
-                <div class="single-project" style="direction: rtl;">
-                    <a class="thumbnail" href="project-details.html">
-                        <img src="{{ site.s3bucket }}partners/rsa-1.jpg" alt="ProjectImage">
-                    </a>
-                    <div class="content" style="right: 0;">
-                        <span class="subtitle">المستثمرون</span>
-                        <h3 class="title">
-                            <a href="https://www.linkedin.com/company/alrashidsons/about/"  target="_blank">شركة راشد سعد الراشد و أولادة المحدودة</a>
-                        </h3>
-                    </div>
-                </div>
-                <!-- Single Project End -->
-            </div>
-            <div class="col mb-30 grid-item development wow fadeIn" data-wow-duration="1.2s" data-wow-delay=".1s">
-                <!-- Single Project Start -->
-                <div class="single-project" style="direction: rtl;">
-                    <a class="thumbnail" href="project-details.html">
-                        <img src="{{ site.s3bucket }}partners/almojal.jpg" alt="ProjectImage">
-                    </a>
-                    <div class="content" style="right: 0;">
-                        <span class="subtitle">المستثمرون</span>
-                        <h3 class="title">
-                            <a href="https://www.almojelco.com/ar" target="_blank">شركة المعجل للتجارة والمقاولات</a> 
-                        </h3>
-                    </div>
-                </div>
-                <!-- Single Project End -->
-            </div>
-            <div class="col mb-30 grid-item design wow fadeIn" data-wow-duration="1.2s" data-wow-delay=".2s">
-                <!-- Single Project Start -->
-                <div class="single-project" style="direction: rtl;">
-                    <a class="thumbnail" href="project-details.html">
-                        <img src="{{ site.s3bucket }}partners/dimah.jpg" alt="ProjectImage">
-                    </a>
-                    <div class="content" style="right: 0;">
-                        <span class="subtitle">المستثمرون</span>
-                        <h3 class="title">
-                            <a href="https://dimah.com.kw/ar" target="_blank">ديمه كابيتال</a> 
-                        </h3>
-                    </div>
-                </div>
-                <!-- Single Project End -->
-            </div>
-            <div class="col mb-30 grid-item tutorials wow fadeIn" data-wow-duration="1.2s" data-wow-delay=".3s">
-                <!-- Single Project Start -->
-                <div class="single-project" style="direction: rtl;">
-                    <a class="thumbnail" href="project-details.html">
-                        <img src="{{ site.s3bucket }}partners/alothman.jpg" alt="ProjectImage">
-                    </a>
-                    <div class="content" style="right: 0;">
-                        <span class="subtitle">المستثمرون</span>
-                        <h3 class="title">
-                            <a href="https://www.al-othman.com/ar/"  target="_blank">شركة العثمان القابضة</a>
-                        </h3>
-                    </div>
-                </div>
-                <!-- Single Project End -->
-            </div>
-
-        </div>
-
-    </div>
-</div>
-<!-- Investors Section End -->
 
 
 
-<!-- About Section Start -->
-<div class="section-padding about-two" id="about">
-    <div class="about-two-shape">
-        <div class="shape shape-1 wow fadeInUp" data-wow-duration="0.9s"><img src="{{ site.s3bucket }}about/shape-2/shape-1.png" alt="Shape"></div>
-        <div class="shape shape-2 wow fadeInUp" data-wow-duration="0.9s"><img src="{{ site.s3bucket }}about/shape-2/shape-2.png" alt="Shape"></div>
-        <div class="shape shape-3 wow fadeInUp" data-wow-duration="0.9s"><img src="{{ site.s3bucket }}about/shape-2/shape-3.png" alt="Shape"></div>
-        <div class="shape shape-4 wow fadeInUp" data-wow-duration="0.9s"><img src="{{ site.s3bucket }}about/shape-2/shape-4.png" alt="Shape"></div>
-        <div class="shape shape-5"><img class="wow zoomIn" data-wow-duration="1.5s" data-wow-delay=".1s" src="{{ site.s3bucket }}about/shape-2/shape-5.png" alt="Shape"></div>
-        <div class="shape shape-7"><img class="wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".1s" src="{{ site.s3bucket }}about/shape-2/shape-7.png" alt="Shape"></div>
-    </div>
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6">
-                <!-- About Images Start -->
-                <div class="about-two-images me-0">
-                    <div class="about-two-images-one wow fadeInUp" data-wow-duration="0.9s">
-                        <img class="js-tilt" src="{{ site.s3bucket }}cover-small.png" alt="QualityImage">
-                        <div class="about-two-images-thumb gradient-2 wow flip" data-wow-duration="0.9s">
-                            <span class="text">تأسست عام</span>
-                            <span class="date">٢٠٠٧</span>
-                        </div>
-                    </div>
-                    <div class="about-two-images-two wow fadeInUp" data-wow-duration="0.9s">
-                        <img class="js-tilt" src="{{ site.s3bucket }}bayan-logo-only.png" alt="QualityImage" width="180">
-                    </div>
-                </div>
-                <!-- About Images End -->
+                <!-- Single Project End -->
             </div>
-            <div class="col-lg-6">
-                <!-- Heading Start -->
-                <div class="heading-one" style="direction: rtl;">
-                    <div class="wow fadeInUp" data-wow-duration="0.9s">
-                        <span class="heading-one-subtitle gradient-text-1-ghamejed">بيان العقارية</span>
-                        <h2 class="heading-one-title">نبذة عن الشركة</h2>
+            <div class="col mb-20 wow fadeIn" data-wow-duration="1.2s" data-wow-delay=".2s">
+                <!-- Single Project Start -->
+                <div class="single-project">
+                    <a class="thumbnail" href="project-details.html">
+                        <img src="{{ site.s3bucket }}exterior/villa-e.jpg" alt="ProjectImage">
+                    </a>
+                    <div class="content">
+                        <span class="subtitle">المساحة 768 متر</span>
+                        <h3 class="title">
+                            <a href="project-details.html">Villa E نموزج فيلا </a>
+                        </h3>
                     </div>
-                    <div class="about-two-text wow fadeInUp" data-wow-duration="0.9s" >
-                        <p>بيان العقارية شركة سعودية مساهمة مقفلة تأسست عام ٢٠٠٧ من قبل نخبة من المستثمرين وشركات الأعمال الرائدة في المملكة العربية السعودية والكويت والبحرين</p>
-                        <p>امت هذه المجموعة بتأسيس شركة «بيان العقارية» وهي شركة تطوير عقاري برأس مال قدره ٢٥ مليون ريال سعودي</p>
-                        <p>في عصر التطوير العقاري المزدهر هذا، جاء المؤسسون لتأسيس شركة بيان العقارية بهدف تحسين مستوى الخدمات، وإنتاج عروض مصممة وفق متطلبات السوق مع الموثوقية والمصداقية البازرة من قبل المؤسسين
-                        </p>
-<!-- 
-                        <a href="contact.html" class="btn-style-one"><span>DUBLEX B</span></a>
-                        <a href="contact.html" class="btn-style-one"><span>DUPLEX D</span></a>
-                        <a href="contact.html" class="btn-style-one"><span>DUPLEX E</span></a> -->
+                    <div class="lightbox">
+                        <a class="item" href="{{ site.s3bucket }}exterior/villa-e.jpg"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
-                <!-- Heading End -->
+
+
+
+                <!-- Single Project End -->
+            </div>
+            <div class="col mb-20 wow fadeIn" data-wow-duration="1.2s" data-wow-delay=".3s">
+                <!-- Single Project Start -->
+
+
+                <div class="single-project">
+                    <a class="thumbnail" href="project-details.html">
+                        <img src="{{ site.s3bucket }}exterior/duplex-b.jpg" alt="ProjectImage">
+                    </a>
+                    <div class="content">
+                        <span class="subtitle"> المساحة 348 متر</span>
+                        <h3 class="title">
+                            <a href="project-details.html">DUBLEX B نموزج دبلكس</a>
+                        </h3>
+                    </div>
+                    <div class="lightbox">
+                        <a class="item" href="{{ site.s3bucket }}exterior/duplex-b.jpg"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <!-- Single Project End -->
             </div>
         </div>
     </div>
 </div>
-<!-- About Section Start -->
-
+<!-- More Project Section End -->
 
 
 <!-- Work Two Section Start -->
@@ -613,93 +565,24 @@ layout: bayan
 </div>
 <!-- Work Two Section End -->
 
-<div id="villas"></div>
 
 
-<!-- More Project Section Start -->
-<div class="more-project" style="z-index: 12; position: relative;">
-
-    <div class="container" style="margin-bottom: 40px; direction: rtl;" >
-        <div class="row">
-            <div class="col-12 wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".1s">
+<div class=" section-padding-top strategy overflow-hidden ">
+    <div class="container">
+        <div class="row" style="z-index: 12; position: relative;">
+            <div class="col-12 wow fadeInUp" data-wow-duration="0.9s" data-wow-delay="0.1s">
                 <!-- Heading Start -->
-                <div class="heading-one">
-                    <span class="heading-one-subtitle gradient-text-1-ghamejed">سكن نموزجي بمنطقة ١ من مشروع بيان العزيزية</span>
+                <div class="heading-one text-center">
+                    <span class="heading-one-subtitle gradient-text-1-ghamejed" style="letter-spacing: 2px;">موقع المشروع عبارة عن امتداد لمدينة الخبر وتعتبر منطقة سكنية جديدة وتجارية التطوير مستمر في منطقة العزيزية للبنية التحتية من أجل استيعاب الطلب المتزايد على حلول الإسكان (بأسعار معقولة) وكانعكاس للزيادة في عدد السكان في مدينة الخبر</span>
+                    <h2 class="heading-one-title">يمكن اعتبار العزيزية <br/>الخبر الجديدة</h2>
                 </div>
                 <!-- Heading End -->
             </div>
         </div>
     </div>
-
-    <div class="container">
-        <div class="row row-cols-lg-3 row-cols-sm-1 row-cols-1 mb-n20 parent-gallery">
-            <div class="col mb-20 wow fadeIn" data-wow-duration="1.2s" data-wow-delay=".1s">
-                <!-- Single Project Start -->
-                <div class="single-project">
-                    <a class="thumbnail" href="project-details.html">
-                        <img src="{{ site.s3bucket }}exterior/duplex-d.jpg" alt="ProjectImage">
-                    </a>
-                    <div class="content">
-                        <span class="subtitle">المساحة 252 متر</span>
-                        <h3 class="title">
-                            <a href="project-details.html">DUBLEX D نموزج دبلكس</a>
-                        </h3>
-                    </div>
-                    <div class="lightbox">
-                        <a class="item" href="{{ site.s3bucket }}exterior/duplex-d.jpg"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-
-
-
-                <!-- Single Project End -->
-            </div>
-            <div class="col mb-20 wow fadeIn" data-wow-duration="1.2s" data-wow-delay=".2s">
-                <!-- Single Project Start -->
-                <div class="single-project">
-                    <a class="thumbnail" href="project-details.html">
-                        <img src="{{ site.s3bucket }}exterior/villa-e.jpg" alt="ProjectImage">
-                    </a>
-                    <div class="content">
-                        <span class="subtitle">المساحة 768 متر</span>
-                        <h3 class="title">
-                            <a href="project-details.html">Villa E نموزج فيلا </a>
-                        </h3>
-                    </div>
-                    <div class="lightbox">
-                        <a class="item" href="{{ site.s3bucket }}exterior/villa-e.jpg"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-
-
-
-                <!-- Single Project End -->
-            </div>
-            <div class="col mb-20 wow fadeIn" data-wow-duration="1.2s" data-wow-delay=".3s">
-                <!-- Single Project Start -->
-
-
-                <div class="single-project">
-                    <a class="thumbnail" href="project-details.html">
-                        <img src="{{ site.s3bucket }}exterior/duplex-b.jpg" alt="ProjectImage">
-                    </a>
-                    <div class="content">
-                        <span class="subtitle"> المساحة 348 متر</span>
-                        <h3 class="title">
-                            <a href="project-details.html">DUBLEX B نموزج دبلكس</a>
-                        </h3>
-                    </div>
-                    <div class="lightbox">
-                        <a class="item" href="{{ site.s3bucket }}exterior/duplex-b.jpg"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-
-                <!-- Single Project End -->
-            </div>
-        </div>
-    </div>
 </div>
-<!-- More Project Section End -->
+
+
 
 <!-- Plan Section Start -->
 <div class=" footer-two-bg">
@@ -739,20 +622,3 @@ layout: bayan
     </div>
 </div>
 <!-- Plan Section End -->
-
-<div class=" section-padding-top strategy overflow-hidden ">
-    <div class="container">
-        <div class="row" style="z-index: 12; position: relative;">
-            <div class="col-12 wow fadeInUp" data-wow-duration="0.9s" data-wow-delay="0.1s">
-                <!-- Heading Start -->
-                <div class="heading-one text-center">
-                    <span class="heading-one-subtitle gradient-text-1-ghamejed" style="letter-spacing: 2px;">موقع المشروع عبارة عن امتداد لمدينة الخبر وتعتبر منطقة سكنية جديدة وتجارية التطوير مستمر في منطقة العزيزية للبنية التحتية من أجل استيعاب الطلب المتزايد على حلول الإسكان (بأسعار معقولة) وكانعكاس للزيادة في عدد السكان في مدينة الخبر</span>
-                    <h2 class="heading-one-title">يمكن اعتبار العزيزية <br/>الخبر الجديدة</h2>
-                </div>
-                <!-- Heading End -->
-            </div>
-        </div>
-    </div>
-</div>
-
-
