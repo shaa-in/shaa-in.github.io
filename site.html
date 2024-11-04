@@ -1,0 +1,89 @@
+---
+title: Home Page
+layout: maps
+---
+
+
+<!-- Slider Section start -->
+<div class=" slider-two overflow-hidden " >
+  <div class=" swiper slidertwo mapslider animation-style-02">
+
+    <!-- Swiper Pagination -->
+    <div class="swiper-pagination slidertwo-pagination" style="z-index: 999;"></div>
+    <div class="swiper-button-prev slidertwo-pagination" style="z-index: 999;"></div>
+    <div class="swiper-button-next slidertwo-pagination" style="z-index: 999;"></div>
+    <div class=" swiper-wrapper" >
+
+      <div class=" swiper-slide">
+        <div class="  container-fluid">
+          {% include maps/site.html %}
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="container-fluid">
+          {% include maps/site2.html %}
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<script>
+  // Initialize both SVG maps after the page has fully loaded
+  window.onload = function() {
+    // First SVG map
+    var panZoomi = svgPanZoom('#site', {
+      zoomEnabled: true,
+      minZoom: 0.5,
+      maxZoom: 10,
+      controlIconsEnabled: true, // This adds the default zoom in, zoom out, and reset controls
+      fit: true,
+      center: true
+    });
+
+    // Controls for the first SVG map
+    document.getElementById('zoom-in-site').addEventListener('click', function(ev) {
+      ev.preventDefault();
+      panZoomi.zoomIn();
+    });
+
+    document.getElementById('zoom-out-site').addEventListener('click', function(ev) {
+      ev.preventDefault();
+      panZoomi.zoomOut();
+    });
+
+    document.getElementById('reset-site').addEventListener('click', function(ev) {
+      ev.preventDefault();
+      panZoomi.resetZoom();
+    });
+
+    // Second SVG map
+    var panZoom = svgPanZoom('#site2', {
+      zoomEnabled: true,
+      minZoom: 0.5,
+      maxZoom: 10,
+      controlIconsEnabled: true, // This adds the default zoom in, zoom out, and reset controls
+      fit: true,
+      center: true
+    });
+
+    // Controls for the second SVG map
+    document.getElementById('zoom-in-site2').addEventListener('click', function(ev) {
+      ev.preventDefault();
+      panZoom.zoomIn();
+    });
+
+    document.getElementById('zoom-out-site2').addEventListener('click', function(ev) {
+      ev.preventDefault();
+      panZoom.zoomOut();
+    });
+
+    document.getElementById('reset-site2').addEventListener('click', function(ev) {
+      ev.preventDefault();
+      panZoom.resetZoom();
+    });
+  };
+</script>

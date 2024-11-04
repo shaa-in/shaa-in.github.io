@@ -1,18 +1,8 @@
 <!-- Strategy and YouTube Video Section start -->
 <div class="section-padding-top strategy overflow-hidden" id="video">
   <div class="container">
-    <div class="row">
-      <div class="col-12 wow fadeInUp" data-wow-duration="0.9s" data-wow-delay="0.1s">
-        <!-- Heading Start -->
-        <div class="heading-one text-center">
-          <span class="heading-one-subtitle gradient-text-1-ghamejed" style="letter-spacing: 2px;">
-            يقع مشروع بيان العزيزية بحي المها في مدينة الخبر <br> حيث تبلغ المساحة الإجمالية للمشروع
-          </span>
-          <h2 class="heading-one-title">٦٢١ الف متر مربع</h2>
-        </div>
-        <!-- Heading End -->
-      </div>
-    </div>
+
+{% include home/621.html %}
 
         <video
           id="my-video"
@@ -20,8 +10,8 @@
           controls
           preload="auto"
           poster="{{ site.s3bucket }}video.jpg"
-          data-setup="{}"
-        >
+          data-setup="{}">
+
           <source src="{{ site.s3bucket }}bayan.mp4" type="video/mp4" />
           <p class="vjs-no-js">
             To view this video please enable JavaScript, and consider upgrading to a
@@ -31,7 +21,6 @@
             </a>.
           </p>
         </video>
-
 
         <script src="https://vjs.zencdn.net/8.16.1/video.min.js"></script>
       </div>

@@ -35,6 +35,23 @@
     navigation: false
   });
 
+  /*---------------------------
+    Maps Slider Two Activation
+  -----------------------------------*/
+  var swiper = new Swiper(".mapslider", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    centeredSlides: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.mapslider .swiper-button-next',
+      prevEl: '.mapslider .swiper-button-prev'
+    },
+  });
+
 /* ----------------------------
     Tilt Animation 
 -------------------------------*/

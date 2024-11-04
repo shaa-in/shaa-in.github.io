@@ -7347,7 +7347,7 @@ hr {
 }
 .service-details-content-list li img {
   flex: 0 0 auto;
-  margin-right: 20px;
+  margin-left: 20px;
 }
 .service-details-content-list li p {
   margin-bottom: 0;

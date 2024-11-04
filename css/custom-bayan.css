@@ -1,4 +1,28 @@
+.map-responsive-map {
+  width: 100%;
+  height: 100vh; /* Make the SVG fill the full height of the viewport */
+  object-fit: cover; /* Ensure the SVG scales well */
 
+
+top: 0px;
+
+  width: 100vw; /* Full width of the viewport */
+  height: 50vh; /* Full height of the viewport */
+border:0px solid gray;
+ background-color: white !important;
+}
+
+
+.map-controls {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1000; /* Ensure the controls are on top of other elements */
+}
+
+.map-controls button {
+  margin: 5px; /* Add some space between buttons */
+}
 /*Corrections as per the comments received*/
 .gradient-text-1-ghamejed {
   color: #343c55;
