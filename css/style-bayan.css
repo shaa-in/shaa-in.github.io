@@ -11744,7 +11744,14 @@ hr {
 }
 .breadcrumb-three::after {
   content: "";
-  background-color: rgba(0, 0, 0, 0.36);
+background: linear-gradient(160deg, 
+    rgba(255, 255, 255, 1) 0%,     /* Stronger white at the starting point */
+    rgba(255, 255, 255, 0.9) 20%,  /* Slightly less white as it moves away */
+    rgba(255, 255, 255, 0.6) 40%,  /* Gradual fade towards transparency */
+    rgba(0, 0, 0, 0.4) 60%,        /* Midway grayish color */
+    rgba(0, 0, 0, 0.7) 80%,        /* Darker as it approaches the end */
+    rgba(0, 0, 0, 0.9) 100%        /* Darkest at the end */
+);
   position: absolute;
   width: 100%;
   height: 100%;
